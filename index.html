@@ -18,37 +18,91 @@
         .lexend{
             font-family: "Lexend", sans-serif;
         }
+        .btn-color{
+            color: #B4F461;
+        }
     </style>
 
-    <script>
-        tailwind.config = {
-        theme: {
-            extend: {
-            colors: {
-                clifford: '#da373d',
-                'banner-btn': 'rgba(171, 239, 95, 0.5)',
-            }
-            }
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'banner-btn': 'rgba(171, 239, 95, 0.5)',
+          }
         }
-        }
-    </script>
+      }
+    }
+  </script>
 
 </head>
 <body class="lexend">
     <!-- Starting of Header part -->
     <header>
          <!-- Starting of Navbar part -->
-
+          <section class="bg-yellow-50">
+            <div class="w-5/6 mx-auto block lg:hidden bg-yellow-50">
+                <div class="flex items-center justify-center">
+                    <img src="assets/logo.png" alt="">
+                    <p class="ml-3 text-lg font-semibold">Donate Bangladesh</p>
+                </div>
+              </div>
+            <div class="navbar  w-full lg:w-5/6 mx-auto py-7 bg-yellow-50">
+                <div class="navbar-start">
+                    <div>
+                     <a class="btn btn-ghost text-xl"><button class="btn px-5 lg:px-7 bg-[#B4F461] text-xm lg:text-lg font-semibold">Blog</button></a>
+                    </div>
+                  </div>
+                
+                <div class="navbar-center hidden lg:flex">
+                    <div class="flex content-center items-center">
+                        <img src="assets/logo.png" alt="">
+                        <p class="ml-3 text-lg font-semibold">Donate Bangladesh</p>
+                    </div>
+                </div>
+                <div class="navbar-end">
+                    <div class="flex content-center items-center">
+                        <img src="assets/coin.png" alt="">
+                        <p class="ml-3 text-lg lg:text-lg font-semibold">5500 BDT</p>
+                    </div>
+                </div>
+              </div>
+          </section>
          <!-- Ending of Navbar part -->
+
+         <!-- Starting of Banner part -->
+          <section class="w-ful mt-10">
+             <div class="flex items-center  justify-center w-2/4 mx-auto">
+                <button class="btn px-5 lg:px-7 bg-[#B4F461] text-xm lg:text-lg font-semibold">Donation</button>
+                <button class="btn btn-outline px-8 ml-3">History</button>
+             </div>
+          </section>
+         <!-- Ending of Banner part -->
     </header>
     <!-- Ending of Header part -->
     
+    <!-- Starting of main part -->
     <main>
+        <!-- Starting of Noakhali donation -->
         <section>
-            <h1>Hello World</h1>
-            <h3>Hello World</h3>
+
         </section>
+        <!-- Ending of Noakhali donation -->
+        
+        <!-- Starting of Feni donation -->
+        <section>
+
+        </section>
+        <!-- Ending of Feni donation -->
+
+        <!-- Starting of Aid part -->
+        <section>
+
+        </section>
+        <!-- Ending of Aid part -->
     </main>
+    <!-- Ending of main part -->
 
     <footer>
 
