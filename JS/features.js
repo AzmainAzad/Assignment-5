@@ -115,3 +115,14 @@ document.getElementById('btn-add-money')
          document.getElementById('cong-message').classList.add("hidden");
    });
 
+   
+   document.getElementById('blog-button')
+   .addEventListener('click',function(){
+         event.preventDefault();
+         
+         window.location.href = '/pages/blog.html';
+   });
+
+  
+
+   

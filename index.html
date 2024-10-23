@@ -36,6 +36,13 @@
           top: 42%;
           left: 40%;
         }
+        @media only screen and (max-width: 576px) {
+          .congrats-message{
+          position: sticky;
+          top: 42%;
+          left: 32%;
+        }
+        }
     </style>
 
 <script>
@@ -66,7 +73,7 @@
             <div class="navbar  w-full lg:w-5/6 mx-auto py-3 lg:py-7">
                 <div class="navbar-start">
                     <div>
-                     <a class="btn btn-ghost text-xl"><button class="btn px-5 lg:px-7 btn-color text-xm lg:text-lg font-semibold">Blog</button></a>
+                     <a id="blog-button" class="btn btn-ghost text-xl"><button id="blog-button" class="btn px-5 lg:px-7 btn-color text-xm lg:text-lg font-semibold">Blog</button></a>
                     </div>
                   </div>
                 
@@ -101,12 +108,12 @@
     <main>
 
         <!--Starting of Congrats message part -->
-        <div id="cong-message" class="text-center congrats-message bg-yellow-50 rounded-lg  h-[200px] w-1/5 hidden">
-          <h1 class="mb-2 text-2xl font-bold">Congrats!</h1>
+        <div id="cong-message" class="text-center congrats-message bg-yellow-50 rounded-lg  w-2/5 lg:w-1/5 hidden">
+          <h1 class="mb-2 lg:text-2xl font-bold">Congrats!</h1>
           <img src="assets/coin.png" alt="" class="mx-auto">
-          <p class="mt-2">You have Donated for Humankind</p>
-          <h3 class="mt-2 text-lg font-bold">Successfully</h3>
-          <button id="close-button" class="btn mt-2 font-bold">close confirmation</button>
+          <p class="mt-2 text-sm lg:text-base">You have Donated for Humankind</p>
+          <h3 class="mt-2 lg:text-lg font-bold">Successfully</h3>
+          <button id="close-button" class="btn mt-2 lg:font-bold">close confirmation</button>
         </div>
       <!-- Ending of Congrats message part -->
 

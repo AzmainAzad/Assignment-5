@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font CDN-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+     <!-- Font Awesome CDN -->
+     <script src="https://kit.fontawesome.com/0802eb4c58.js" crossorigin="anonymous"></script>
+
+     <style>
+        .lexend{
+            font-family: "Lexend", sans-serif;
+        }
+        .btn-color{
+            background-color: #B4F461;
+        }
+        .p-color{
+            color: rgba(17, 17, 17, 0.7);
+        }
+        .header{
+            position: sticky;
+            top: 0;
+        }
+        .header-opacity{
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .congrats-message{
+          position: sticky;
+          top: 42%;
+          left: 40%;
+        }
+    </style>
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'banner-btn': 'rgba(171, 239, 95, 0.5)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="lexend">
+     <!-- Starting of Navbar part -->
+     <section class="bg-yellow-50 ">
+        <div class="w-5/6 mx-auto block lg:hidden bg-yellow-50 mb-0 lg:mb-5 pt-0 lg:pt-3">
+            <div class="flex items-center justify-center">
+                <img src="/assets/logo.png" alt="">
+                <p class="ml-3 text-lg font-semibold">Donate Bangladesh</p>
+            </div>
+          </div>
+        <div class="navbar  w-full lg:w-5/6 mx-auto py-3 lg:py-7">
+            <div class="navbar-start">
+                <div>
+                 <a href="../index.html" id="home-button" class="btn btn-ghost text-xl"><button id="blog-button" class="btn px-5 lg:px-7 btn-color text-xm lg:text-lg font-semibold">Home</button></a>
+                </div>
+              </div>
+            
+            <div class="navbar-center hidden lg:flex">
+                <div class="flex content-center items-center">
+                    <img src="/assets/logo.png" alt="">
+                    <p class="ml-3 text-lg font-semibold">Donate Bangladesh</p>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="flex content-center items-center">
+                    <img src="/assets/coin.png" alt="">
+                    <p id="main-balance-reload" class="ml-3 text-lg lg:text-lg font-semibold">5500 BDT</p>
+                </div>
+            </div>
+          </div>
+      </section>
+     <!-- Ending of Navbar part -->
+   
+    <div class="w-5/6 mx-auto mt-20">
+        <h2 class="mb-9 text-2xl font-bold">Important FAQ <span><i class="fa-regular fa-circle-question"></i></span></h2>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is Document Object Model?</div>
+            <div class="collapse-content">
+              <p>The Document Object Model (DOM) is a programming API for HTML and XML documents.</p>
+            </div>
+          </div>
+    
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>Using getElementById: The getElementById method allows you to select an element by its ID. ...</p>
+            </div>
+          </div>
+    
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is Event handling in DOM?</div>
+            <div class="collapse-content">
+              <p>Event handling in the DOM (Document Object Model) is the process of detecting and responding to user interactions or system events on a web page.</p>
+            </div>
+          </div>
+    
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How to change style of element using DOM?</div>
+            <div class="collapse-content">
+              <p>You can change the style of DOM elements in two ways. You can either change the inline style of the element, or you can change the class of the element.</p>
+            </div>
+          </div>
+    </div>
+    
+    <script src="JS/utilities.js"></script>
+    <script src="JS/features.js"></script>
+</body>
+</html>
