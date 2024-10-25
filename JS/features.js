@@ -222,17 +222,7 @@ document.getElementById('btn-add-money')
 
    
 
-
-// Function for going into blog page 
-   document.getElementById('blog-button')
-   .addEventListener('click',function(){
-         event.preventDefault();
-         
-         window.location.href = '/pages/blog.html';
-   });
-
-
-
+   
 
 // Starting of Function for changing the history button color
 document.getElementById('history-btn')
