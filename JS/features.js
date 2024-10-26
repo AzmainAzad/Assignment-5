@@ -5,8 +5,10 @@ document.getElementById('btn-add-money')
 
            const addMoney = getInputFieldValueById('input-add-money');
 
+           const balanced = getTextFieldValueById('main-balance');
+
          
-           if(addMoney > 0 && addMoney < 5500){
+           if(addMoney > 0 && addMoney < balanced + 1){
                 const balance = getTextFieldValueById('account-balance');
 
                 const newBalance = balance + addMoney;
@@ -47,8 +49,10 @@ document.getElementById('btn-add-money')
 
            const addMoney = getInputFieldValueById('feni-input-add-money');
 
+           const balanced = getTextFieldValueById('main-balance');
+
            
-           if(addMoney > 0 && addMoney < 5500){
+           if(addMoney > 0 && addMoney < balanced + 1){
                 const balance = getTextFieldValueById('feni-account-balance');
 
                 const newBalance = balance + addMoney;
@@ -88,8 +92,10 @@ document.getElementById('btn-add-money')
 
            const addMoney = getInputFieldValueById('quota-input-add-money');
 
+           const balanced = getTextFieldValueById('main-balance');
+
            
-           if(addMoney > 0 && addMoney < 5500){
+           if(addMoney > 0 && addMoney < balanced + 1){
                 const balance = getTextFieldValueById('quota-account-balance');
 
                 const newBalance = balance + addMoney;
